@@ -1,26 +1,27 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div id="app">
+    <div class="app-container">
+      <header class="header">
+        <h1 class="title">Concurso de Canto 2025</h1>
+        <p class="subtitle">Inscríbete y demuestra tu talento 🎤</p>
+      </header>
+
+      <main style="margin-top:18px; display:grid; gap:18px;">
+        <div class="card">
+          <FormularioInscripcion />
+        </div>
+      </main>
+    </div>
+  </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
-
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
+<script setup>
+import FormularioInscripcion from './components/FormularioInscripcion.vue'
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+body {
+  margin: 0;
+  font-family: 'Inter', system-ui, sans-serif;
 }
 </style>
